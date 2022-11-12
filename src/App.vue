@@ -1,17 +1,41 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p @click="handle">fghijhvjijhgv</p>
+    <router-view v-if="isRouterAlive"></router-view>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+  },
+  data () {
+    return {
+      isRouterAlive: true,
+    }
+  },
+  methods: {
+    handle () {
+      this.$router.push({
+        name: 'home'
+      })
+      console.log(this.$route)
+    },
+    reload () {
+      this.isRouterAlive = false
+      this.$nextTick(() => {
+        this.isRouterAlive = true
+      })
+    }
+  },
+  mounted () {
+    console.log('jjjj')
   }
 }
 </script>

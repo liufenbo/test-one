@@ -123,7 +123,7 @@ module.exports = {
 
         // 这个选项不会影响 `*.vue` 文件。
 
-        modules: false
+        requireModuleExtension: false
 
     },
 

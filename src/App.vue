@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <p @click="handle">fghijhvjijhgv</p>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <p @click="handle">fghijhvjijhgv</p> -->
     <router-view v-if="isRouterAlive"></router-view>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>

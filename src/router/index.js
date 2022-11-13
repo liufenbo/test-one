@@ -12,14 +12,19 @@ const router = new Router({
   mode: 'hash',
   routes: [
     {
-        path: '/index/hdhh',
+        path: '/',
         name: 'home',
         component:() => import('../view/index.vue'),
     },
     {
-        path: '/',
+        path: '/index/hdhh',
         name: 'homes',
         component:() => import('../App.vue'),
+    },
+    {
+        path: '/first',
+        name: 'first',
+        component:() => import('../view/first.vue'),
     },
     {
         path: '*',

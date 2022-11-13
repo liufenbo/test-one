@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>hhhhhhhhhhhhh</p>
-    <p @click="cancle">返回</p>
+    <p>六分波啦啦啦啦啦啦</p>
+    <p @click="next">继续</p>
   </div>
 </template>
 
@@ -11,9 +11,9 @@ export default {
   components: {
   },
   methods: {
-    cancle() {
+    next() {
         this.$router.push({
-            name: 'first'
+            name: 'home'
         })
     }
   }
